@@ -1,10 +1,10 @@
-# [Your Game Title] API
+# [Campus Escape] API
 
-Backend API for **[Your Game Title]**, a tournament game for the SorSU Bulan Campus library.
+Backend API for **[Campus Escape]**, a timed quiz race for the SorSU Bulan Campus library.
 CS 313 Software Engineering 1, A.Y. 2026-2027.
 
-- Developer: [Your full name] ([your GitHub username]), BSCS [3-1 or 3-2]
-- Group and game concept: [Group name]
+- Developer: Chiara Sentino (kyarakekz), BSCS 3-2
+- Group and game concept: Group 6 - Campus Escape
 
 This is my own build of my group's game concept. Every commit in this repository was made by me, with Git, on my own computer or in my own Codespace.
 
@@ -20,8 +20,8 @@ This is my own build of my group's game concept. Every commit in this repository
 ## Setup
 
 ```
-git clone [repository-url]
-cd [folder-name]
+git clone https://github.com/kyarakekz/campus-escape-api-v2.git
+cd campus-escape-api-v2
 npm install
 ```
 
@@ -60,11 +60,19 @@ Base URL: `http://localhost:3001/api/v1`
 
 ## What "completed" means in my game
 
-[One or two sentences: when does a player count as having completed a game? For example: "A player completed the game when they answered every question, even if some answers were wrong or timed out."]
+[A participant—an individual player or a group—completes Campus Escape by choosing the correct final gate door and escaping before the session ends. Completed participants are ranked by final score, highest first; tied scores share a rank. Participants who do not escape are marked incomplete and receive no rank.
+"]
 
 ## Tables
 
-[List your tables, one line each, in the order of your migrations.]
+- user
+- question_sets
+- questions
+- question_choices
+- sessions
+- seats
+- answers
+- reward_claims
 
 ## Database scripts
 
