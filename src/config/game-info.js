@@ -3,7 +3,7 @@
 const pkg = require('../../package.json');
 
 module.exports = {
-  slug: 'campus_escape',            // your group's game, lower case with hyphens, for example shelf-climb
+  slug: 'campus-escape',            // your group's game, lower case with hyphens, for example shelf-climb
   name: 'Campus Escape',            // the name players will see
   team: 'Group 6 (BSCS 3-2)',            // your group's name and section, for example Bookworms (3-1)
   developer: 'kyarakekz',       // YOUR GitHub username: this build is yours
