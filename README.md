@@ -65,7 +65,7 @@ Base URL: `http://localhost:3001/api/v1`
 
 ## Tables
 
-- user
+- users
 - question_sets
 - questions
 - question_choices
