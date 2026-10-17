@@ -7,10 +7,42 @@ module.exports = {
     const endedAt = new Date(now.getTime() - 4 * 60 * 1000);
 
     await queryInterface.bulkInsert('users', [
-      { user_id: 1, school_id: '2099-3000', email: 'creator@example.test', password_hash: 'seed-only-placeholder', created_at: now },
-      { user_id: 2, school_id: '2099-3001', email: 'ari@example.test', password_hash: 'seed-only-placeholder', created_at: now },
-      { user_id: 3, school_id: '2099-3002', email: 'mika@example.test', password_hash: 'seed-only-placeholder', created_at: now },
-      { user_id: 4, school_id: '2099-3003', email: 'sol@example.test', password_hash: 'seed-only-placeholder', created_at: now },
+      {
+        user_id: 1,
+        full_name: 'Taylor Batumbal Jr.',
+        role: 'host',
+        school_id: '2099-3000',
+        email: 'taytay@example.test',
+        password_hash: 'seed-only-placeholder',
+        created_at: now,
+      },
+      {
+        user_id: 2,
+        full_name: 'Ma. Cathy Fukiko',
+        role: 'player',
+        school_id: '2099-3001',
+        email: 'cat09@example.test',
+        password_hash: 'seed-only-placeholder',
+        created_at: now,
+      },
+      {
+        user_id: 3,
+        full_name: 'Lucy Pearl Tan',
+        role: 'player',
+        school_id: '2099-3002',
+        email: 'Lucipearl@example.test',
+        password_hash: 'seed-only-placeholder',
+        created_at: now,
+      },
+      {
+        user_id: 4,
+        full_name: 'Sol Demarco',
+        role: 'player',
+        school_id: '2099-3003',
+        email: 'sol@example.test',
+        password_hash: 'seed-only-placeholder',
+        created_at: now,
+      },
     ]);
 
     await queryInterface.bulkInsert('question_sets', [
@@ -57,15 +89,66 @@ module.exports = {
     ]);
 
     await queryInterface.bulkInsert('seats', [
-      { seat_id: 1, session_id: 1, user_id: 2, nickname: 'Ari', score: 1200, current_stage: 'gate', time_penalty_sec: 0, token_expires_at: null, completed: true },
-      { seat_id: 2, session_id: 1, user_id: 3, nickname: 'Mika', score: 900, current_stage: 'gate', time_penalty_sec: 0, token_expires_at: null, completed: true },
-      { seat_id: 3, session_id: 1, user_id: 4, nickname: 'Sol', score: 750, current_stage: 'gate', time_penalty_sec: 0, token_expires_at: null, completed: true },
+      {
+        seat_id: 1,
+        session_id: 1,
+        user_id: 2,
+        nickname: 'Ari',
+        score: 1200,
+        current_stage: 'gate',
+        time_penalty_sec: 0,
+        token_expires_at: null,
+        completed: true,
+      },
+      {
+        seat_id: 2,
+        session_id: 1,
+        user_id: 3,
+        nickname: 'Mika',
+        score: 900,
+        current_stage: 'gate',
+        time_penalty_sec: 0,
+        token_expires_at: null,
+        completed: true,
+      },
+      {
+        seat_id: 3,
+        session_id: 1,
+        user_id: 4,
+        nickname: 'Sol',
+        score: 750,
+        current_stage: 'gate',
+        time_penalty_sec: 0,
+        token_expires_at: null,
+        completed: true,
+      },
     ]);
 
     await queryInterface.bulkInsert('answers', [
-      { answer_id: 1, seat_id: 1, question_id: 1, choice_index: 3, is_correct: true, answered_at: endedAt },
-      { answer_id: 2, seat_id: 2, question_id: 1, choice_index: 3, is_correct: true, answered_at: endedAt },
-      { answer_id: 3, seat_id: 3, question_id: 1, choice_index: 3, is_correct: true, answered_at: endedAt },
+      {
+        answer_id: 1,
+        seat_id: 1,
+        question_id: 1,
+        choice_index: 3,
+        is_correct: true,
+        answered_at: endedAt,
+      },
+      {
+        answer_id: 2,
+        seat_id: 2,
+        question_id: 1,
+        choice_index: 3,
+        is_correct: true,
+        answered_at: endedAt,
+      },
+      {
+        answer_id: 3,
+        seat_id: 3,
+        question_id: 1,
+        choice_index: 3,
+        is_correct: true,
+        answered_at: endedAt,
+      },
     ]);
 
     await queryInterface.bulkInsert('reward_claims', [

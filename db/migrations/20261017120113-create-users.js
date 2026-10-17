@@ -9,6 +9,14 @@ module.exports = {
         autoIncrement: true,
         allowNull: false,
       },
+      full_name: {
+        type: Sequelize.STRING(120),
+        allowNull: false,
+      },
+      role: {
+        type: Sequelize.STRING(20),
+        allowNull: false,
+      },
       school_id: {
         type: Sequelize.STRING(20),
         allowNull: false,
