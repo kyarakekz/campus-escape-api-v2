@@ -60,7 +60,7 @@ Base URL: `http://localhost:3001/api/v1`
 
 ## What "completed" means in my game
 
-A participant—an individual player or a group—completes Campus Escape by choosing the correct final gate door and escaping before the session ends. Completed participants are ranked by final score, highest first; tied scores share a rank. Participants who do not escape are marked incomplete and receive no rank.
+Participant—an individual player or a group—completes the game by choosing the correct final gate door and escaping before the session ends. Completed participants are ranked by final score, highest first; tied scores share a rank. Participants who do not escape are marked incomplete and receive no rank.
 
 ## Tables
 
